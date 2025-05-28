@@ -27,4 +27,4 @@ response = requests.post("http://127.0.0.1:5000/export", json=payload)
 with open("planner_export.csv", "wb") as f:
     f.write(response.content)
 
-print("✅ File downloaded as 'planner_export.csv'")
+print("File downloaded as 'planner_export.csv'")
